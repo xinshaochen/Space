@@ -1582,7 +1582,13 @@
       <name>$PROJ_DIR$\..\Refer\src\24l01.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\..\Refer\src\ADC.c</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\..\Refer\src\delay.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Refer\src\eeprom.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\Refer\src\led.c</name>

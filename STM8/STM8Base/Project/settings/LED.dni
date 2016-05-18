@@ -9,7 +9,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=614381636
+Checksum=9927866
 [CallStack]
 ShowArgs=0
 [Disassembly]
@@ -58,7 +58,8 @@ ActionState=1
 Enabled=0
 ShowSource=1
 [watch_formats]
-Fmt0={W}0:key	2	0
+Fmt0={W}0:a	4	0
+Fmt1={W}0:key	2	0
 [DataSample]
 LogEnabled=0
 GraphEnabled=0
@@ -72,7 +73,9 @@ Category=_ 0
 LoggingEnabled=_ 0
 LogFile=_ ""
 [Breakpoints]
-Count=0
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\main.c}.58.7" 1 0 0 0 "" 0 ""
+Bp1=_ "STD_CODE" "{$PROJ_DIR$\main.c}.51.9" 1 0 0 0 "" 0 ""
+Count=2
 [Aliases]
 A0=_ "F:\私用\今明\代码\stm8s105k4t6\工程2\User\main.c" ""
 Count=1

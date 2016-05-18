@@ -1,4 +1,4 @@
-"F:\Going\stm8计数器\code\STM8\Refer\src\remote.c"
+"F:\Going\stm8计数器\code\STM8\Refer\src\eeprom.c"
 -std=c99
 -ferror-limit=100
 -I
@@ -223,7 +223,7 @@ F:\Going\stm8计数器\code\STM8\Refer\inc
 -D__HAS_LOCATED_WITH_INIT__=1
 -D__IAR_COMPILERBASE__=593160
 -D__DATE__="May 16 2016"
--D__TIME__="19:40:38"
+-D__TIME__="19:41:21"
 -D__STDC__=1
 -D__STDC_VERSION__=199901L
 -D__STDC_HOSTED__=1
