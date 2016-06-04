@@ -156,7 +156,7 @@ namespace 串口
             {
                 try
                 {
-                    serialPort1.PortName = 端口cbox.Text;
+                    serialPort1.PortName = 端口cbox.Text; 
                     serialPort1.BaudRate = Convert.ToInt32(波特率cbox.Text, 10);
                     serialPort1.Parity = Parity.None;
                     serialPort1.DataBits = 8;
