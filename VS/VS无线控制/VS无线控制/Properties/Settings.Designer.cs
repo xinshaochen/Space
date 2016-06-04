@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace wavetest.Properties
+namespace VS无线控制.Properties
 {
 
 
