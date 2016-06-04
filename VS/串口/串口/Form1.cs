@@ -52,18 +52,22 @@ namespace 串口
         
         private void portDataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            byte[] buff = new byte[1024];
-            int len = serialPort1.Read(buff, 0, 1024);
+            
 
             if (!readHex.Checked)
             {
-                readtext.Text += buff.ToString();   
+                string str = serialPort1.ReadExisting();
+
+                readtext.Text += str;
+                readLen += (uint)str.Length;
+                 
             }else
             {
                 string str=string .Empty;
                 string str2;
-                
-                
+                byte[] buff = new byte[1024];
+                int len = serialPort1.Read(buff, 0, 1024);
+                readLen += (uint)len;
 
                 for (int l = 0; l < len; l++)
                 {
@@ -73,6 +77,7 @@ namespace 串口
 
                 readtext.Text += str;
             }
+            rlen.Text = readLen.ToString();
             readtext.SelectionStart = readtext.Text.Length;//设置光标位置
             readtext.ScrollToCaret();//滚动到光标处
         }
@@ -95,18 +100,19 @@ namespace 串口
             //{
                 if (sendtext.Text != "")
                 {
-                    sendLen += (UInt32)sendtext.Text.Length;
-                    slen.Text = sendLen.ToString();
+                    
                     if (!sendHex.Checked)
                     {
+                        
                         try
                         {
                         if (newLine.Checked)
                             sendtext.Text += "\r\n";
                             serialPort1.WriteLine(sendtext.Text);
 
-                        
-                        }
+                            sendLen += (UInt32)sendtext.Text.Length;
+                            slen.Text = sendLen.ToString();
+                       }
                         catch
                         {
                             MessageBox.Show("发送失败", "错误");
@@ -121,18 +127,30 @@ namespace 串口
                     {
                         try
                         {
-                            for (int i = 0; i < (sendtext.Text.Length - sendtext.Text.Length % 2) / 2; i++)
+                        string buf=sendtext.Text;
+                          string sendbuf =   buf.Replace(" ", "");
+                        
+                        for (int i = 0; i < (sendbuf.Length - sendbuf.Length % 2) / 2; i++)
                             {
-                                data[0] = Convert.ToByte(sendtext.Text.Substring(i * 2, 2), 16);
+                                data[0] = Convert.ToByte(sendbuf.Substring(i * 2, 2), 16);
                                 serialPort1.Write(data, 0, 1);
                             }
-                            if(sendtext.Text.Length%2!=0)
+                            if(sendbuf.Length%2!=0)
                             {
-                                data[0] = Convert.ToByte(sendtext.Text.Substring(sendtext.Text.Length - 1, 1), 16);
+                                data[0] = Convert.ToByte(sendbuf.Substring(sendbuf.Length - 1, 1), 16);
                                 serialPort1.Write(data, 0, 1);
                             }
-                            if(newLine.Checked)
+                        sendLen += (uint)sendbuf.Length / 2;
+                        if (sendbuf.Length % 2 != 0)
+                            sendLen++;
+                            
+
+                        if (newLine.Checked)
+                        {
                             serialPort1.WriteLine("\r\n");
+                            sendLen += 2;
+                        }
+                        slen.Text = sendLen.ToString();
 
                     }
                         catch

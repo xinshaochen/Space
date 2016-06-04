@@ -222,22 +222,6 @@
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
-        <Bp>
-          <Number>3</Number>
-          <Type>0</Type>
-          <LineNumber>315</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>0</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>0</BreakIfRCount>
-          <Filename>C:\Users\xinsh\Desktop\Git\Space\STM32F1\test\Refer\src\uartprotocol.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
       </Breakpoint>
       <WatchWindow1>
         <Ww>
@@ -302,10 +286,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>30</ColumnNumber>
+      <ColumnNumber>26</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>90</TopLine>
-      <CurrentLine>101</CurrentLine>
+      <TopLine>63</TopLine>
+      <CurrentLine>137</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -328,7 +312,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>127</TopLine>
+      <TopLine>128</TopLine>
       <CurrentLine>131</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Boot\startup_stm32f10x_md.s</PathWithFileName>
@@ -374,9 +358,9 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>8</ColumnNumber>
+      <ColumnNumber>9</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>40</TopLine>
+      <TopLine>41</TopLine>
       <CurrentLine>52</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Refer\src\wave.c</PathWithFileName>
@@ -392,7 +376,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>141</TopLine>
+      <TopLine>142</TopLine>
       <CurrentLine>146</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Refer\src\delay.c</PathWithFileName>
@@ -408,7 +392,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>171</TopLine>
+      <TopLine>172</TopLine>
       <CurrentLine>177</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Refer\src\sys.c</PathWithFileName>
@@ -424,7 +408,7 @@
       <Focus>0</Focus>
       <ColumnNumber>3</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>606</TopLine>
+      <TopLine>607</TopLine>
       <CurrentLine>619</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Refer\src\ILI93xx.c</PathWithFileName>
@@ -472,7 +456,7 @@
       <Focus>0</Focus>
       <ColumnNumber>28</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>3000</TopLine>
+      <TopLine>3001</TopLine>
       <CurrentLine>3006</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Refer\eMPL\inv_mpu.c</PathWithFileName>
@@ -488,7 +472,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>924</TopLine>
+      <TopLine>925</TopLine>
       <CurrentLine>933</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Refer\eMPL\inv_mpu_dmp_motion_driver.c</PathWithFileName>
@@ -502,10 +486,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>13</ColumnNumber>
+      <ColumnNumber>6</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>248</TopLine>
-      <CurrentLine>249</CurrentLine>
+      <TopLine>40</TopLine>
+      <CurrentLine>61</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Refer\src\uartprotocol.c</PathWithFileName>
       <FilenameWithoutPath>uartprotocol.c</FilenameWithoutPath>
@@ -518,7 +502,7 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>14</ColumnNumber>
+      <ColumnNumber>15</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>30</TopLine>
       <CurrentLine>44</CurrentLine>
